@@ -1,0 +1,138 @@
+.firsthomepage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.CleanWater-Image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.50),
+      rgba(0,0,0,0.75)  
+  );
+  z-index: 1;
+}
+
+.onscreentext {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.onscreentext2 {
+  position: relative;
+  margin-top: auto;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transform: translateY(-80px);
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.secondhomepage {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 15rem;
+  padding-bottom: 4rem;
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+}
+
+.onscreentext3 {
+
+  position:absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.onscreentext4 {
+
+  position:absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 4rem auto;
+  padding: 0 1.25rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  z-index:2;
+}
+
+.card1 {
+  position: relative;
+  width: 200px;
+  padding: 70px;
+  border-radius: 18px;
+  background: rgb(191, 234, 253);
+  box-shadow: 0px 6px 24px rgba(0,0,0,0.18); 
+  text-align: center;
+}
+
+.card2 {
+  position: relative;
+  width: 200px;
+  padding: 70px;
+  border-radius: 18px;
+  background: rgb(191, 234, 253);
+  box-shadow: 0px 6px 24px rgba(0,0,0,0.18); 
+  text-align: center;
+}
+
+.card3 {
+  position: relative;
+  width: 200px;
+  padding: 70px;
+  border-radius: 18px;
+  background: rgb(191, 234, 253);
+  box-shadow: 0px 6px 24px rgba(0,0,0,0.18); 
+  text-align: center;
+}
+
+.title1, .title2, .title3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: black;
+}
+
+.paragraph1, .paragraph2, .paragraph3 {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color:black;
+}
+

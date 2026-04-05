@@ -1,0 +1,108 @@
+/* front-end/src/pages/Statistics.css */
+
+/* ===== base body styles ===== */
+/* I reset margin/padding here so the page lines up with the navbar nicely */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== main statistics page wrapper ===== */
+/* this div wraps everything on the statistics page */
+.statistics-page,
+.statistics-container {
+  background-color: white;
+  padding: 110px 40px 40px; /* increased top padding so title clears navbar */
+  min-height: 100vh;
+}/* make sure it fills the screen vertically */
+
+
+/* page title */
+/* heading “Community Statistics” at the top of the page */
+.statistics-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: left;      /* title starts left like in my screenshot */
+  margin: 0 0 40px 0;    /* only bottom spacing so it sits under navbar */
+  color: #111;
+}
+
+/* ===== stat cards at the top ===== */
+/* flex row that holds the two grey summary boxes */
+.stat-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;            /* distance between the two cards */
+  margin-bottom: 40px;  /* space before the charts start */
+}
+
+/* individual grey summary card (e.g. total pumps / total reports) */
+.stat-card {
+  background-color: #e2e2e2;      /* light grey box like in the design */
+  padding: 22px 40px;
+  border-radius: 4px;
+  min-width: 260px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* label + value appear on one line:  “total pumps : 30” */
+.stat-label {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111;
+  margin-right: 4px;        /* tiny gap before the number */
+  text-transform: lowercase; /* matches the mock-up style */
+}
+
+/* number part of the stat card (e.g. 30, 310, etc.) */
+.stat-value {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111;
+}
+
+/* ===== charts row ===== */
+/* this wraps the bar chart and the pie chart side by side */
+.charts-row {
+  display: flex;
+  flex-wrap: wrap;        /* lets them stack on small screens */
+  justify-content: center;
+  gap: 40px;              /* spacing between the two chart boxes */
+}
+
+/* each chart box (white card around the canvas) */
+.chart-wrapper {
+  width: 460px;
+  height: 320px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* make the canvas actually fill the white chart card */
+.chart-wrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* data notice box */
+/* bottom-left blue notice overlay – same wording as the design spec */
+.data-notice-box {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  max-width: 240px;
+  z-index: 1000;   /* make sure it sits above the charts */
+}
