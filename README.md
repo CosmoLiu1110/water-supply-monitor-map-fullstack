@@ -142,10 +142,21 @@ npm run dev
 
 ### Backend
 
+Start PostgreSQL with Docker:
+
+```bash
+docker compose up -d postgres
+```
+
 Run:
 
 ```bash
 cd back-end
+SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/water_supply \
+SPRING_DATASOURCE_DRIVER=org.postgresql.Driver \
+SPRING_DATASOURCE_USERNAME=water_app \
+SPRING_DATASOURCE_PASSWORD=water_app_password \
+SPRING_H2_CONSOLE_ENABLED=false \
 ./mvnw spring-boot:run
 ```
 
